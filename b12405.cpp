@@ -3,12 +3,15 @@
 
 void NhapMang(char str[],int n){
 	char str1[100];
+	char str2[]="  ";
+	
 	printf("nhap cac so trong mang: ");
 	scanf("%d",&n);
 	for(int i=0;i<n;i++){
 		printf("nhap chuoi: ");
 		scanf("%s",str1);
 		strcat(str,str1);
+		strcat(str,str2);
 	}
 }
 
